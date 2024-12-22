@@ -4,16 +4,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.teachmeskills.lesson_23.parser.XMLParser;
 import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import com.teachmeskills.lesson_23.model.Book;
 import com.teachmeskills.lesson_23.model.BookListWrapper;
-
 import java.io.File;
-import java.io.IOException;
+
 
 public class ApplicationRunner {
-    public static void main(String[] args) throws IOException, JAXBException {
+    public static void main(String[] args){
         ObjectMapper mapper = new ObjectMapper();
         try {
             //1. Use the Jackson library, write a Java program that reads a JSON file (books.json) and stores the data in a Java collection.
